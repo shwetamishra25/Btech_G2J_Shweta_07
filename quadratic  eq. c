@@ -1,0 +1,28 @@
+#include<stdio.h>
+#include<math.h>
+int main()
+{
+    float a,b,c,r1,r2,D;
+    printf("standard quadratic equation = Ax^2 + Bx +c = 0\n");
+    printf("enter cofficient of 'x^2='\n",a);
+    scanf("%f" , &a);
+    printf("enter cofficient of 'x='\n",b);
+    scanf("%f" , &b);
+    printf("enter the value of c = '\n",c);
+    scanf("%f", &c);
+    D = b*b -4*a*c;
+    if(D>0){
+        r1 = (-b + sqrt(D))/(2*a);
+        r2 = (-b - sqrt(D))/(2*a);
+        printf("root %.2f",r1);
+        printf("root %.2f",r2);
+    }
+    else if(D == 0){
+    r2 = (-b/(2*a));
+    printf("root %.2f",r1);
+    }
+    else{
+        printf("roots are imaginary");
+    }
+    return 0;
+}
